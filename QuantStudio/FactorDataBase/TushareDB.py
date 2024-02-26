@@ -391,7 +391,8 @@ class TushareDB(FactorDB):
         self._TableInfo, self._FactorInfo = updateInfo(self._InfoFilePath, self._InfoResourcePath, self._QS_Logger)
     def connect(self):
         ts.set_token(self.Token)
-        self._ts = ts.pro_api()
+        self._ts = ts.pro_api('20231208200557-eb280087-82b0-4ac9-8638-4f96f8f4d14c') # added by chuyin
+        self._ts._DataApi__http_url = 'http://tsapi.majors.ltd:7000' # added by chuyin
         return 0
     def disconnect(self):
         self._ts = None

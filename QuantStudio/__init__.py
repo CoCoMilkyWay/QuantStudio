@@ -14,7 +14,8 @@ from traitsui.menu import OKButton, CancelButton
 
 __QS_MainPath__ = os.path.split(os.path.realpath(__file__))[0]
 __QS_LibPath__ = __QS_MainPath__+os.sep+"Lib"
-__QS_ConfigPath__ = os.path.expanduser("~")+os.sep+"QuantStudioConfig"
+__QS_ConfigPath__ = "/home/work/trade/QuantStudio/QuantStudioConfig"
+#os.path.expanduser("~")+os.sep+"QuantStudioConfig"
 __QS_Logger__ = logging.getLogger()
 
 from matplotlib.pylab import mpl
